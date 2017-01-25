@@ -1,0 +1,7 @@
+<form ng-submit='addFriend( newFriend )' >
+  <input type="text" ng-model="newFriend.fn" placeholder="First Name">
+  <input type="text" ng-model="newFriend.ln" placeholder="Last Name">
+  <input type="date" ng-model="newFriend.bd" placeholder="Birthdate">
+  <input type="submit"  value="Submit">
+</form>
+<p ng-repeat='friend in friends' >{{ friend.fn }} , {{ friend.ln }}</p>
